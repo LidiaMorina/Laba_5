@@ -1,9 +1,8 @@
 package com.company;
 
-
-
+/*содержание элементов тарифов*/
 public class Tariffs {
-
+        /*элементы */
         private String tatiff_name;
         private String operator;
         private String payroll;
@@ -12,52 +11,57 @@ public class Tariffs {
         private Parameters parameters = new Parameters();
 
 
-    public String getOperator () {
-            return operator;
+        public String toString(){
+            return "\nОператор: "+ operator +"\nАбоненсская плата: "+ payroll+"\n" + callPrices.toString()+"\nЦена за смс: " + smsPrices+"\n" + parameters.toString();
         }
 
-        public void setOperator (String operator){
-            this.operator = operator;
-        }
+        /*получаем геттеры и сеттеры*/
+        public String getOperator () {
+                return operator;
+            }
 
-        public String getPayroll () {
-            return payroll;
-        }
+            public void setOperator (String operator){
+                this.operator = operator;
+            }
 
-        public void setPayroll (String payroll){
-            this.payroll = payroll;
-        }
+            public String getPayroll () {
+                return payroll;
+            }
 
-        public String getTatiff_name () {
-            return tatiff_name;
-        }
+            public void setPayroll (String payroll){
+                this.payroll = payroll;
+            }
 
-        public void setTatiff_name (String tatiff_name){
-            this.tatiff_name = tatiff_name;
-        }
+            public String getTatiff_name () {
+                return tatiff_name;
+            }
 
-        public CallPrices getCallPrices () {
-            return callPrices;
-        }
+            public void setTatiff_name (String tatiff_name){
+                this.tatiff_name = tatiff_name;
+            }
 
-        public void setCallPrices (CallPrices callPrices){
-            this.callPrices = callPrices;
-        }
+            public CallPrices getCallPrices () {
+                return callPrices;
+            }
 
-        public String getSmsPrices () {
-            return smsPrices;
-        }
+            public void setCallPrices (CallPrices callPrices){
+                this.callPrices = callPrices;
+            }
 
-        public void setSmsPrices (String smsPrices){
-            this.smsPrices = smsPrices;
-        }
+            public String getSmsPrices () {
+                return smsPrices;
+            }
 
-        public Parameters getParameters () {
-            return parameters;
-        }
+            public void setSmsPrices (String smsPrices){
+                this.smsPrices = smsPrices;
+            }
 
-        public void setParameters (Parameters parameters){
-            this.parameters = parameters;
-        }
+            public Parameters getParameters () {
+                return parameters;
+            }
+
+            public void setParameters (Parameters parameters){
+                this.parameters = parameters;
+            }
 
 }

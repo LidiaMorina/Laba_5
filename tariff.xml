@@ -1,52 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Tariff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="tariff_xsd.xsd">
+<Tariff xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="tariff_xsdShema.xsd">
 	<tatiff_name name="black">
-		<operator>Tele2</operator>
-		<payroll>350</payroll>
+		<operator>Tele2 </operator>
+		<payroll> 350</payroll>
 	    <call_prices>
-			<withinNetwork>0.5</withinNetwork>
-			<outsideNetwork>5</outsideNetwork>
-			<fixedPhone>10</fixedPhone>
+			<withinNetwork> 0.5 </withinNetwork>
+			<outsideNetwork> 5 </outsideNetwork>
+			<fixedPhone> 10 </fixedPhone>
 		</call_prices>
 		
-		<sms_price>2</sms_price>
+		<sms_price> 2 </sms_price>
 		
 		<parameters>
-			<favoriteNumber>3</favoriteNumber>
-			<tariffication>1 min</tariffication>
-			<paymentConnection>0</paymentConnection>
+			<favoriteNumber> 3 </favoriteNumber>
+			<tariffication> 1min </tariffication>
+			<paymentConnection> 0 </paymentConnection>
 		</parameters>
 	</tatiff_name>
 
 
 	<tatiff_name name="myOnline">
-		<operator>MTS</operator>
-		<payroll>550</payroll>
+		<operator> MTS </operator>
+		<payroll> 550 </payroll>
 	    <call_prices>
-			<withinNetwork>0.2</withinNetwork>
-			<outsideNetwork>2</outsideNetwork>
-			<fixedPhone>5</fixedPhone>
+			<withinNetwork> 0.2 </withinNetwork>
+			<outsideNetwork> 2 </outsideNetwork>
+			<fixedPhone> 5 </fixedPhone>
 		</call_prices>
 		
-		<sms_price>1.5</sms_price>
+		<sms_price> 1.5 </sms_price>
 		
 		<parameters>
-			<favoriteNumber>5</favoriteNumber>
-			<tariffication>12 sec</tariffication>
-			<paymentConnection>0</paymentConnection>
+			<favoriteNumber> 5 </favoriteNumber>
+			<tariffication> 12sec </tariffication>
+			<paymentConnection> 0 </paymentConnection>
 		</parameters>
 	</tatiff_name>
 	
 	<tatiff_name name="yellow">
-		<operator>bilain</operator>
-		<payroll>150</payroll>
+		<operator> bilain </operator>
+		<payroll> 150 </payroll>
 	    <call_prices>
-			<withinNetwork>1.5</withinNetwork>
-			<outsideNetwork>7</outsideNetwork>
-			<fixedPhone>12</fixedPhone>
+			<withinNetwork> 1.5 </withinNetwork>
+			<outsideNetwork> 7 </outsideNetwork>
+			<fixedPhone> 12 </fixedPhone>
 		</call_prices>
 		
-		<sms_price>1</sms_price>
+		<sms_price> 1 </sms_price>
 		
 		<parameters>
 			<favoriteNumber>8</favoriteNumber>
@@ -54,5 +54,7 @@
 			<paymentConnection>233</paymentConnection>
 		</parameters>
 	</tatiff_name>
+	
+	
 
 </Tariff>

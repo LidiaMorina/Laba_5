@@ -1,5 +1,5 @@
 package com.company;
-
+/*инициалищация тегов*/
 public enum TariffEnum {
 
     TARIFF("Tariff"),
@@ -13,7 +13,7 @@ public enum TariffEnum {
     FIXEDPHONE("fixedPhone"),
     SMS_PRICE("sms_price"),
     PARAMETERS("parameters"),
-    FAVORITENUMDER("favoriteNumber"),
+    FAVORITENUMBER("favoriteNumber"),
     TARIFFICATION("tariffication"),
     PAYMENTCONNECTION("paymentConnection");
 

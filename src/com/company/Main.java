@@ -1,29 +1,24 @@
 package com.company;
-import org.xml.sax.XMLReader;
-import org.xml.sax.helpers.XMLReaderFactory;
 import org.xml.sax.SAXException;
 import java.io.IOException;
-
-import org.xml.sax.Attributes;
-import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
-
-
+import java.util.Set;
 import javax.xml.parsers.ParserConfigurationException;
-import javax.xml.parsers.SAXParser;
-import javax.xml.parsers.SAXParserFactory;
+
+/*Гланый метод main на выходе вывод в консоль и создание отсортированного html документа*/
 
 public class Main {
 
     public static void main(String[] args)throws ParserConfigurationException, SAXException, IOException {
 
-        SAXParserFactory factory = SAXParserFactory.newInstance();
-        SAXParser parser = factory.newSAXParser();
-
+        //вывод в консоль
         Tariff saxTariff = new Tariff();
         saxTariff.tariff("tariff.xml");
-        System.out.println(saxTariff.getTariff());
+        Set<Tariffs> ttt = saxTariff.getTariff();
+        System.out.println(ttt);
 
+        //преобразоавние в HTML документ
+        Transform transform = new Transform();
+        transform.transform();
 
 
 

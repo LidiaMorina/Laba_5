@@ -1,10 +1,17 @@
 package com.company;
-
+/*класс содержащий элементы Парматеров: любимый номер, тарификация,
+                                        плата за подключение */
 public class Parameters {
     private String favoriteNumber;
     private String tariffication;
     private String paymentConnection;
 
+
+    public String toString(){
+        return "\nНаличие любимого номера: "+ favoriteNumber +"\nТарификация: "+ tariffication +"\nПлата за подключение: "+ paymentConnection;
+    }
+
+    /*геттеры и сеттеры параметров*/
     public String getFavoriteNumber() {
         return favoriteNumber;
     }
