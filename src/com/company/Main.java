@@ -4,7 +4,9 @@ import java.io.IOException;
 import java.util.Set;
 import javax.xml.parsers.ParserConfigurationException;
 
-/*Гланый метод main на выходе вывод в консоль и создание отсортированного html документа*/
+/*Программа предназначенная для разбора XML-документа и инициализации коллекции
+объектов информацией из XML-файла с сортировки объектов c использованием SAX-парсера
+ на выходе: консольный вывод  XML-документа и создание заполненного html файла по xls*/
 
 public class Main {
 
@@ -16,7 +18,7 @@ public class Main {
         Set<Tariffs> ttt = saxTariff.getTariff();
         System.out.println(ttt);
 
-        //преобразоавние в HTML документ
+        //вызов метода преобразоавние в HTML документ
         Transform transform = new Transform();
         transform.transform();
 
